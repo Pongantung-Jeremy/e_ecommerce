@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Col,Container,Row,Card,Button,InputGroup,FormControl,ButtonGroup, NavDropdown } from 'react-bootstrap';
+import { Col,Container,Row,Card,Button,InputGroup,FormControl, NavDropdown } from 'react-bootstrap';
 
 
 function App() {
@@ -8,52 +8,54 @@ function App() {
     
     <div className="App">
       <Container>
+
+        {/* Navvbarr */}
         <Row>
           <Col>
           
           <nav class="navbar navbar-expand-md navbar-light bg-light">
-       <div class="navbar-collapse collapse  order-1 order-md-0 dual-collapse2 ">
-          <ul class="navbar-nav mx-auto">
-            <NavDropdown title="ALL TYPES" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Chair</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Table</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">wardrobe</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">No Filter</NavDropdown.Item>
-            </NavDropdown>
-          </ul>
-      </div>
-      <div class="navbar-collapse collapse  order-2 order-md-1 dual-collapse2">
-        <ul class="navbar-nav mx-auto  ">
-          <li class="nav-item active">
-              <a class="nav-link" href="#">Popular Products</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Low Price</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">High Price</a>
-          </li>
-        </ul>
-      </div>
-      <div class="navbar-collapse collapse w-150 order-3 order-md-2 dual-collapse2">
-          <ul class="navbar-nav mx-auto">
-            <NavDropdown title="PRICE" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Rp 0 - Rp 100.000</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Rp 101.000 - Rp 1.000.000</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Rp 1.101.000 - Rp 10.100.000</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">All Price</NavDropdown.Item>
-            </NavDropdown>
-          </ul>
-      </div>
-      </nav>
+          <div class="navbar-collapse collapse  order-1 order-md-0 dual-collapse2 ">
+              <ul class="navbar-nav mx-auto">
+                <NavDropdown title="ALL TYPES" id="collasible-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Chair</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Table</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">wardrobe</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">No Filter</NavDropdown.Item>
+                </NavDropdown>
+              </ul>
+          </div>
+          <div class="navbar-collapse collapse  order-2 order-md-1 dual-collapse2">
+            <ul class="mid navbar-nav mx-auto  ">
+              <li class="nav-item active">
+                  <a class="nav-link active" href="#">Popular Products</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Low Price</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">High Price</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-collapse collapse w-150 order-3 order-md-2 dual-collapse2">
+              <ul class="navbar-nav mx-auto">
+                <NavDropdown title="PRICE" id="collasible-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Rp 0 - Rp 100.000</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Rp 101.000 - Rp 1.000.000</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Rp 1.101.000 - Rp 10.100.000</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">All Price</NavDropdown.Item>
+                </NavDropdown>
+              </ul>
+          </div>
+          </nav>
           </Col>
         </Row>
 
 
-        {/*  */}
         <Row>
+          {/* Rotan Chair cards */}
           <Col>
           <Card style={{ width: '400px' ,top:'20px'}}>
             <Row>
@@ -111,7 +113,7 @@ function App() {
                 <Col variant="dark">
                 <InputGroup  className="mb-2" style={{ width: '250px' , marginRight:'10px',}}>
                     <FormControl
-                    placeholder="Rp. 12.000"
+                    placeholder="Rp. 370.000"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                     disabled
@@ -129,8 +131,9 @@ function App() {
           </Col>
 
 
-         {/*  */}
-         <Col>
+
+          {/* Wooden chair cards */}
+          <Col>
           <Card style={{ width: '400px' ,top:'20px'}}>
             <Row>
             <div className="mt-4 mb-4">
@@ -173,7 +176,7 @@ function App() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/> 
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="silver" class="bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/> 
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="silver" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -185,7 +188,7 @@ function App() {
                 <Col variant="dark">
                 <InputGroup  className="mb-2" style={{ width: '250px' , marginRight:'10px',}}>
                     <FormControl
-                    placeholder="Rp. 12.000"
+                    placeholder="Rp. 53.000"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                     disabled
@@ -198,16 +201,14 @@ function App() {
                 </InputGroup.Text>
               </InputGroup>
                 </Col>
-                
-                
             </Row>
-
-            
-
             </Card>
           </Col>
-{/*  */}
-<Col>
+          
+          
+          
+          {/* Sofabed cards */}
+          <Col>
           <Card style={{ width: '400px' ,top:'20px'}}>
             <Row>
             <div className="mt-4 mb-4">
@@ -253,7 +254,7 @@ function App() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/> 
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="silver" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/> 
                 </svg>
               </div>
@@ -262,7 +263,7 @@ function App() {
                 <Col variant="dark">
                 <InputGroup  className="mb-2" style={{ width: '250px' , marginRight:'10px',}}>
                     <FormControl
-                    placeholder="Rp. 12.000"
+                    placeholder="Rp. 500.000"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                     disabled
@@ -274,13 +275,8 @@ function App() {
                 </svg></Button> {' '}
                 </InputGroup.Text>
               </InputGroup>
-                </Col>
-                
-                
+                </Col> 
             </Row>
-
-            
-
             </Card>
           </Col>
 
