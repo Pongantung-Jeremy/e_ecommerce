@@ -67,18 +67,23 @@
   color: #555;
 }
 
-/* --------------------------------- */
-/* RATING CSS HOVER EFFECT */
-/* --------------------------------- */
 
-.rating-css.hover-effect input:checked + label ~ label {
-  opacity: 0.5;
+/* Blue Border Bottom HOVER EFFECT */
+.mid a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
 }
 
-.rating-css.hover-effect:hover input + label ~ label {
-  opacity: 1;
+.mid a:hover {
+  border-bottom: 3px solid rgb(0, 81, 255);
 }
 
-.rating-css.hover-effect:hover input:hover + label ~ label {
-  opacity: 0.5;
+.mid a.active {
+  border-bottom: 3px solid rgb(0, 81, 255);
 }
